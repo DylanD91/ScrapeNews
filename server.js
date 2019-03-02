@@ -24,3 +24,8 @@ app.set('view engine' , 'handlebars');
 // Routes
 require('./routes/apiRoutes')(app);
 require('./routes/htmlRoutes')(app);
+
+// Start the server
+app.listen(PORT, function() {
+    console.log('App running on on port 3030');
+});
