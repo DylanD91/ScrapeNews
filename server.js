@@ -7,3 +7,6 @@ const exphbs = require("express-handlebars");
 // Initialize Express
 const app = express();
 app.use(express.static("public"));
+
+// Require all models
+const db = require("./models");
