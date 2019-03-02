@@ -1,0 +1,27 @@
+{
+  "name": "scrapenews",
+  "version": "1.0.0",
+  "description": "All the News That's Fit to Scrape",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DylanD91/ScrapeNews.git"
+  },
+  "author": "Dylan Dusenberry",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DylanD91/ScrapeNews/issues"
+  },
+  "homepage": "https://github.com/DylanD91/ScrapeNews#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.2",
+    "modules": "^0.4.0",
+    "mongoose": "^5.4.16"
+  }
+}
