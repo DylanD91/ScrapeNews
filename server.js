@@ -13,6 +13,8 @@ app.use(express.static("public"));
 const db = require("./models");
 
 // PORT
+mongoose.connect(process.env.MONGODB_URI || "mongodb://heroku_fsv9hr4g:7i70qf0akb1f7hip7tjb880at2@ds157895.mlab.com:57895/heroku_fsv9hr4g");
+
 const PORT = process.env.PORT || 3030;
 
 app.use(express.urlencoded({ extended: true }));
