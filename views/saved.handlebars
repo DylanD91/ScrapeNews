@@ -1,0 +1,25 @@
+<div class="savedArt articles">
+    	<ul>
+    		{{#each articles }}
+    		<div class="panel panel-default">
+    		  <div class="panel-heading">
+    		    <h3 class="panel-title">{{title}}</h3>
+    		  </div>
+    		  <div class="panel-body">
+    		    <a class="artLink" href={{link}}>{{link}}</a>
+            <!--Button-->
+
+    		      <button data-id={{_id}} class="btn btn-danger pull-right removeSaved">Remove from Saved</button>
+
+              
+    		  </div>
+    		</div>
+    		<br />
+    		<br />
+
+      </div>
+
+      {{/each}}
+    </ul>
+
+    </div>

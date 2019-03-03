@@ -18,7 +18,7 @@ const app = express();
 
 // Mongo Database
 // If deployed, use the deployed database. Otherwise use the local mongoHeadlines database
-const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/ScrapeNews";
+const MONGODB_URI = process.env.MONGODB_URI || "mongodb://heroku_fsv9hr4g:7i70qf0akb1f7hip7tjb880at2@ds157895.mlab.com:57895/heroku_fsv9hr4g";
 mongoose.connect(MONGODB_URI, {useNewUrlParser:  true});
 
 
