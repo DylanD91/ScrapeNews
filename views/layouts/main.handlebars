@@ -3,19 +3,26 @@
 <head>
   <meta charset='UTF-8'>
   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-  <title>All the News That's Fit to Scrape!</title>
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css'>
-  <script src='https://code.jquery.com/jquery-3.3.1.js' integrity='sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60='
-  crossorigin='anonymous'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js'></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  {{!-- CSS --}}
+  <link rel='stylesheet' type='text/css' href='/public/css/style.css'>
 
-  <script src='server.js'></script>
-  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.2/css/all.css'
-    integrity='sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr' crossorigin='anonymous'>
-  <link rel='stylesheet' type='text/css' href='/public/css/style.css''>
-
+<h1> Mongo Scraper!!!!!</h1>
 </head>
-
+<nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">Mongo Scraper</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a id="nbar" href="/">Home</a></li>
+                    <li><a id="nbar" href="/saved">Saved Articles</a></li>
+                    <li><button type="button" class="btn" id="scrape">Scrape Articles</button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 <body>
 
 
