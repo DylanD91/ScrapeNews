@@ -34,3 +34,15 @@ app.listen(PORT, function() {
 });
 
 // Routes
+
+app.get('/', function (req, res) {
+    db.Article.find({}, (error, dbArticle) => {
+      if (error) {
+        console.log(error);
+      }
+      console.log(dbArticle)
+      res.render('index', {
+        articles: dbArticle
+      });
+    })
+  });
