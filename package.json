@@ -9,7 +9,8 @@
     "express": "^4.16.4",
     "express-handlebars": "^3.0.2",
     "modules": "^0.4.0",
-    "mongoose": "^5.4.16"
+    "mongoose": "^5.4.16",
+    "path": "^0.12.7"
   },
   "devDependencies": {},
   "scripts": {
