@@ -7,21 +7,12 @@ const moment = require('moment');
 
 // Library Schema for Comments
 const NoteSchema = new Schema({
-
-    name: {
-      type: String
-      // unique: true
-    },
-    note: {
-      type: String
-    },
-    dateCreated: {
-      type: Date,
-      default: Date.now
-    },
+    title: String,
+    body: String
+    
 });
 
 // Mongoose Method
-var Comment = mongoose.model('Note', NoteSchema);
+var Note = mongoose.model('Note', NoteSchema);
 // Export
 module.exports = Note;
