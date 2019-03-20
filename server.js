@@ -1,3 +1,4 @@
+// Some of the code I used from past Mongo activites in class
 // Dependencies
 const express = require("express");
 const mongoose = require("mongoose");
@@ -46,3 +47,20 @@ app.get('/', function (req, res) {
       });
     })
   });
+
+  // A GET route for scraping the echoJS website
+app.get("/scrape", function(req, res) {
+    // Grabbing the HTML body with Axios
+    axios.get("https://www.nytimes.com/").then(function(response) {
+      console.log(response.data)
+    //   Loading it into Cheerio
+      var $ = cheerio.load(response.data);
+    })
+  })
+
+
+    // Now, we grab every h2 within an article tag, and do the following:
+    $(".module--news .block-link").each(function(i, element) {
+        var result = {};
+    })
+  
