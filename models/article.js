@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 // Schema
 const Schema = mongoose.Schema;
 
+
 var ArticleSchema = new Schema({
     title: {
       type: String,
